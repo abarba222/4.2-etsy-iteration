@@ -69,9 +69,10 @@ _.each(woodenItems, function(item){
   console.log(item.title + " is " + "made " + "of " + "wood " + ".");
 });
 
-
-
-//
+/* Filter out the items that are made of wood by targeting item.materials
+and using _.contains to specifically pull all items with wood. Then use
+_.each to show the title of all the wooden items. Finally add " is
+made of wood." behind item.title in console.log.*/
 
 //Problem #5
 
@@ -81,7 +82,9 @@ var plus8materials = _.filter(items, function(item){
 
 console.log(plus8materials);
 
-//
+/* Use filter to find all the items with more than 8 materials. Return
+item.materials.length >= 8 to find the items with 8 or more materials.
+*/
 
 //Problem #6
 
@@ -93,4 +96,7 @@ var manMade = _.filter(items, function(item){
 
 console.log(manMade.length + " were made by their sellers.");
 
-//
+/* Use filter to find the personally made items. Find the "i_did" answers
+in the category of who_made by using ===. In console.log follow manMade
+with .length to get the specific number and add " were made by their sellers."
+*/
